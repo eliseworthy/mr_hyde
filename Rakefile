@@ -6,25 +6,20 @@ task :setup do
   puts "Thanks for using our Jekyll auto-generate/deploy script."
   puts "You'll be up and running in no time, just a few questions first..."
   puts "*************"
-  # user_name = ask "Github Username: "
-  # system("echo #{user_name}") 
-  user_name = "athal7"
+  user_name = ask "Github Username: "
+  system("echo #{user_name}") 
 
-  # blog_git = ask "Github READ ONLY Blog Url: "
-  # system("echo #{blog_git}")
-  blog_git = "git://github.com/athal7/hungry-academy-blog.git"
+  blog_git = ask "Github READ ONLY Blog Url: "
+  system("echo #{blog_git}")
 
-  # branch = ask "Choose a branch for deploying: "
-  # system("echo #{branch}")
-  branch = "master"
+  branch = ask "Choose a branch for deploying: "
+  system("echo #{branch}")
 
-  # heroku_url = ask "Heroku Git URL: "
-  # system("echo #{heroku_url}")
-  heroku_url = "git@heroku.com:blazing-leaf-9204.git"
+  heroku_url = ask "Heroku Git URL: "
+  system("echo #{heroku_url}")
 
-  # route_name = ask "Preferred Route Name: "
-  # system("echo #{route_name}")
-  route_name = "generate"
+  route_name = ask "Preferred Route Name: "
+  system("echo #{route_name}")
 
   # Get Hub for Git Commands
   system("brew install hub")
