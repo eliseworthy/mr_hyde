@@ -57,6 +57,9 @@ task :setup do
   system("git commit -m 'Prepare config for auto-deploy'")
   system("git push --force heroku master")
   Dir.chdir("..")
+
+  # Get rid of everything
+  system("rm -Rf sinatra && rm -Rf buildpack")
 end
 
 task :destroy do
