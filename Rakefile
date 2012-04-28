@@ -45,7 +45,6 @@ task :setup do
   # Setup Sinatra
   system("hub clone austenito/heroku-octopress-autodeploy sinatra")
   Dir.chdir("sinatra")
-  system("hub fork")
   system("git remote add heroku #{heroku_url}")
   system("heroku config:add BUILDPACK_URL=git://github.com/#{user_name}/heroku-buildpack-ruby-octopress.git")
   file_name = "config.yml"
