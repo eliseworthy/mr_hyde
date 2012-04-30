@@ -2,7 +2,7 @@ require 'yaml'
 
 desc "Set up auto-deploy script"
 task :setup do
-  puts "************"
+  puts "*************"
   puts "Thanks for using our Jekyll auto-generate/deploy script."
   puts "You'll be up and running in no time, just a few questions first..."
   puts "*************"
