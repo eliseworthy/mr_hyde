@@ -12,9 +12,6 @@ task :setup do
   blog_git = ask "Github READ ONLY Blog Url: "
   system("echo #{blog_git}")
 
-  branch = ask "Choose a branch for deploying: "
-  system("echo #{branch}")
-
   heroku_url = ask "Heroku Git URL: "
   system("echo #{heroku_url}")
 
@@ -34,7 +31,6 @@ task :setup do
   file_name = "config.yml"
   text = File.read(file_name)
   text.gsub!("your blog", blog_git)
-  text.gsub!("master", branch)
   File.open(file_name, "w") {|file| file.write(text) }
   system("rake setup")
   system("git add .")
