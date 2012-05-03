@@ -6,7 +6,7 @@
 ## Dependencies
 * Homebrew
 * Jekyll or Octopress blog
-* Heroku stack cedar url for your blog
+* Heroku stack cedar dyno for your blog
 
 ## How to Use
 ### Prepare your blog
