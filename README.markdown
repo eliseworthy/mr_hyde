@@ -1,16 +1,16 @@
-# Mr. Hyde lets you auto-deploy your Jekyll/Octopress blog on Heroku
-## Features
+## Mr. Hyde lets you auto-deploy your Jekyll/Octopress blog on Heroku
+#### Features
 * Only push to Github, Mr. Hyde takes care of the rest to update your blog on your heroku site
 * No need to generate, No need to commit your public folder
 
-## Dependencies
+#### Dependencies
 * Homebrew
 * Jekyll or Octopress blog
 * Heroku stack cedar dyno for your blog
 
-## How to Use
-### Prepare your blog
-* Delete your public folder from your blog
+### How to Use
+#### Prepare your blog
+* Delete your public folder from your blog (you won't need it anymore)
 * Put "public" in your blog's .gitignore
 * Push up your blog to the master branch of a github repository
 * Add the Post-Receive URL on Github
@@ -18,13 +18,9 @@
   * For security, you may want to generate a hash string that will be difficult for people to guess.
 ![Github Post-Receive Section](https://img.skitch.com/20120414-j1fhk2mwei7e4u7n4bxg5y2ubt.jpg)
 
-### Run the setup script
-* Clone this repository whever your want
-* `cd mr-hyde`
-* `rake setup`
+#### Run the setup script
+* curl -O https://raw.github.com/athal7/mr_hyde/master/mr_hyde && rake setup && rm mr_hyde
 * Respond to the prompts
 
-## What is happening?
+### What is happening?
 * We are overwriting your heroku site with a sinatra app that, when it receives the post-receive request from your repository, uses a custom buildpack to generate your Jekyll/Octopress blog.
-
-### Please keep in mind that this process is still being tested. Any feedback or suggestions on how to make it better will be appreciated.
