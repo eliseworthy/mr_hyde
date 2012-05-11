@@ -14,7 +14,7 @@
 * Put "public" in your blog's .gitignore
 * Push up your blog to the master branch of a github repository
 * Add the Post-Receive URL on Github
-  * In the `Admin` section of your blog's Github repo add a post-receive URL for your heroku url. For example, `http://www.jumpstartlab.com/generate`. A POST request will be submitted whenever you commit changes to your blog. This is how the server will pull your blog's latest changes from Github and generate the new static content.
+  * In the `Admin` section of your blog's Github repo add a WebHook URL for your heroku url. For example, `http://www.jumpstartlab.com/generate`. A POST request will be submitted whenever you commit changes to your blog. This is how the server will pull your blog's latest changes from Github and generate the new static content.
   * For security, you may want to generate a hash string that will be difficult for people to guess.
 ![Github Post-Receive Section](https://img.skitch.com/20120414-j1fhk2mwei7e4u7n4bxg5y2ubt.jpg)
 
