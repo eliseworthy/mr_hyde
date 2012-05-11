@@ -17,7 +17,7 @@
 ![Github WebHook URLs Section](https://img.skitch.com/20120511-bskb3cbg46c5h5c3tbwcjua6gi.jpg)
 
 #### Run the setup script
-* curl -O https://raw.github.com/athal7/mr_hyde/master/mr_hyde.rake && rake setup && rm mr_hyde.rake
+* curl -O https://raw.github.com/athal7/mr_hyde/master/Rakefile && bundle exec rake hyde && rm Rakefile
 * Respond to the prompts
 
 ### What is happening?

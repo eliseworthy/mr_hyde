@@ -1,7 +1,7 @@
 require 'yaml'
 
 desc "Set up auto-deploy script"
-task :setup do
+task :hyde do
   notify_user "Thanks for using our Jekyll auto-generate/deploy script.\nYou'll be up and running in no time, just a few questions first..."
   set_user_information
   install_hub
