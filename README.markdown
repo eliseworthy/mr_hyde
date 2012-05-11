@@ -14,7 +14,7 @@
 * Add the Post-Receive URL on Github
   * In the `Admin` section of your blog's Github repo add a WebHook URL for your heroku url. For example, `http://www.jumpstartlab.com/generate`. A POST request will be submitted whenever you commit changes to your blog. This is how the server will pull your blog's latest changes from Github and generate the new static content.
   * For security, you may want to generate a hash string that will be difficult for people to guess.
-![Github WebHook URLs Section](https://skitch.com/athal7/83wr7/administration-athal7-curriculum)
+![Github WebHook URLs Section](https://img.skitch.com/20120511-bskb3cbg46c5h5c3tbwcjua6gi.jpg)
 
 #### Run the setup script
 * curl -O https://raw.github.com/athal7/mr_hyde/master/mr_hyde && rake setup && rm mr_hyde
