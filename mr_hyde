@@ -1,13 +1,17 @@
 require 'yaml'
+require 'open3'
 
 desc "Set up auto-deploy script"
 task :setup do
+
+  stdout_str, stderr_str, status = Open3.capture3(command)
+
   puts "*************"
   puts "Thanks for using our Jekyll auto-generate/deploy script."
   puts "You'll be up and running in no time, just a few questions first..."
   puts "*************"
   user_name = ask "Github Username: "
-  system("echo #{user_name}") 
+  system("echo #{user_name}")
 
   blog_git = ask "Github READ ONLY Blog Url: "
   system("echo #{blog_git}")
