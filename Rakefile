@@ -1,10 +1,7 @@
 require 'yaml'
-require 'open3'
 
 desc "Set up auto-deploy script"
 task :setup do
-
-  stdout_str, stderr_str, status = Open3.capture3(command)
 
   puts "*************"
   puts "Thanks for using our Jekyll auto-generate/deploy script."
@@ -58,10 +55,6 @@ task :setup do
   Dir.chdir("..")
 
   # Get rid of everything
-  system("rm -Rf sinatra && rm -Rf buildpack")
-end
-
-task :destroy do
   system("rm -Rf sinatra && rm -Rf buildpack")
 end
 
